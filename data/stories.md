@@ -1,31 +1,70 @@
-## happy path
+## greet
 * greet
-  - utter_greet
-* mood_great
-  - utter_happy
+    - utter_answer_greet
 
-## sad path 1
+## say affirm  with greet
 * greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+    - utter_answer_greet
 * affirm
-  - utter_happy
-
-## sad path 2
+    - utter_answer_affirm
+    
+## say affirm 
+* affirm
+    - utter_answer_affirm
+    
+## say no with greet
 * greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+    - utter_answer_greet
 * deny
-  - utter_goodbye
+    - utter_answer_deny
+    
+## say no 
+* deny
+    - utter_answer_deny
+
 
 ## say goodbye
 * goodbye
-  - utter_goodbye
-
-## bot challenge
-* bot_challenge
-  - utter_iamabot
+    - utter_answer_goodbye
+    
+## thanks with greet
+* greet
+    - utter_answer_greet
+* thanks
+    - utter_answer_thanks
+    
+## thanks
+* thanks
+    - utter_answer_thanks
+    
+## who are you with greet
+* greet
+    - utter_answer_greet
+* whoareyou
+    - utter_answer_whoareyou
+    
+## who are you
+* whoareyou
+    - utter_answer_whoareyou
+    
+## who are you with greet
+* greet
+    - utter_answer_greet
+* whoareyou
+    - utter_answer_whoareyou
+    
+## what to do
+* whattodo
+    - utter_answer_whattodo
+    
+## what to do with greet
+* greet
+    - utter_answer_greet
+* whattodo
+    - utter_answer_whattodo    
+    
+## happy path
+* request_weather
+    - weather_form
+    - form{"name": "weather_form"}
+    - form{"name": null}
